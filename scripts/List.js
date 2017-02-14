@@ -83,8 +83,8 @@ export default class List {
       this.append(data)
     } else {
       while (counter !== position){
-        var previous     = currentNode
-        currentNode      = currentNode.nextNode
+        var previous  = currentNode
+        currentNode   = currentNode.nextNode
         counter++
       }
       let newNode = new Node({data: data})
