@@ -8,14 +8,14 @@ export default class List {
 
   findTail() {
     let currentNode = this.head
-    while(currentNode.nextNode !== null) {
+    while (currentNode.nextNode !== null) {
       currentNode = currentNode.nextNode
     }
     return currentNode
   }
 
   append(data) {
-    if(this.head === null) {
+    if (this.head === null) {
       this.head = new Node({data: data})
       this.length ++
     } else {
@@ -34,11 +34,11 @@ export default class List {
   }
 
   pop(){
-    if(this.head === null) {
+    if (this.head === null) {
       return
     } else {
       let currentNode = this.head
-      while(currentNode !== this.findTail()) {
+      while (currentNode !== this.findTail()) {
         currentNode = currentNode.nextNode
       }
       currentNode.nextNode = null
@@ -49,7 +49,7 @@ export default class List {
 
   includes(data) {
     let currentNode = this.head
-    while(currentNode.nextNode !== null) {
+    while (currentNode.nextNode !== null) {
       if (currentNode.data === data){return true}
       currentNode = currentNode.nextNode
     }
@@ -58,8 +58,8 @@ export default class List {
 
   find(data) {
     let currentNode = this.head
-    while(currentNode.data !== data) {
-      if(currentNode.nextNode === null) {return null}
+    while (currentNode.data !== data) {
+      if (currentNode.nextNode === null) {return null}
       currentNode = currentNode.nextNode
     }
     return currentNode
@@ -68,7 +68,7 @@ export default class List {
   intoArray() {
     let array = [this.head.data]
     let currentNode = this.head
-    while(currentNode.nextNode !== null) {
+    while (currentNode.nextNode !== null) {
       currentNode = currentNode.nextNode
       array.push(currentNode.data)
     }
@@ -79,7 +79,7 @@ export default class List {
     let counter = 0
     let currentNode = this.head
 
-    if(currentNode.nextNode === null || this.intoArray().length < position) {
+    if (currentNode.nextNode === null || this.intoArray().length < position) {
       this.append(data)
     } else {
       while (counter !== position){
