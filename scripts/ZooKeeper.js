@@ -5,8 +5,10 @@ export default class ZooKeeper {
       steak: 'meat',
       corn: 'plant',
       grass: 'plant',
-      beef: 'meat',
-      fruit: 'plant'
+      pork: 'meat',
+      fruit: 'plant',
+      zeebra: 'meat',
+      alpaca: 'meat'
     };
   }
 }
