@@ -20,7 +20,6 @@ describe('TDD with Pokemon cuz its lit', () => {
   })
 
   it('should have the ability to do attacks', () => {
-    // eval(locus)
     expect(pikachu.doThisAttack('thunder')).to.equal('I dont know that attack')
 
     pikachu.learnThisAttack('thunder', 100)
@@ -31,4 +30,11 @@ describe('TDD with Pokemon cuz its lit', () => {
 
   });
 
+  it.only('should have a function that gives me the strongest attack' , () => {
+    pikachu.learnThisAttack('swagger', 150)
+    pikachu.learnThisAttack('beLikeMike', 500)
+    pikachu.learnThisAttack('beLikeJhun', 2)
+
+    expect(pikachu.strongestAttack()).to.equal("pikachu's strongest attack is beLikeMike and deals 500 damage")
+  })
 });
