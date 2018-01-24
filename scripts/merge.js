@@ -1,5 +1,4 @@
-require('locus')
-const cleanedObjects = (obj1, obj2) => ({ a: obj1, b: obj2 })
+export const cleanedObjects = (obj1, obj2) => ({ a: obj1, b: obj2 })
 
 export const addValues = (val1, val2) => val1 + val2
 
