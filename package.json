@@ -15,8 +15,11 @@
   "devDependencies": {
     "babel-cli": "^6.22.2",
     "babel-core": "^6.22.1",
-    "babel-preset-env": "^1.1.8",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.22.0",
-    "chai": "^3.5.0"
+    "chai": "^3.5.0",
+    "chai-truthy": "^1.0.0",
+    "locus": "^2.0.1"
   }
 }
